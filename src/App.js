@@ -1,13 +1,14 @@
 import './App.css';
 import Parent from "./Parent";
+import CounterContext from "./CounterContext";
 
 function App() {
   return (
-    <div>
-
-    <Parent />
-
-    </div>
+    <CounterContext.Provider value={19}>
+      <div>
+        <Parent name="Mustafa" />
+      </div>
+    </CounterContext.Provider>
   );
 }
 
