@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import './App.css';
 import Parent from "./Parent";
 import CounterContext from "./CounterContext";
-import { useState } from 'react';
 
 function App() {
 
