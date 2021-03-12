@@ -8,7 +8,9 @@ const Child = (props) => {
         <div>
             <h1>Hellow World</h1>
             <h3>My name is {props.name}</h3>
-            <h4>counterValue is {counterValue}</h4>
+            <h4>counterValue is {counterValue[0]}</h4>
+
+            <button onClick={()=> {counterValue[1](++counterValue[0])}}>Incrment Context</button>
         </div>
     )
 }
